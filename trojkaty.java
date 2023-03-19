@@ -11,11 +11,15 @@ class Trojkaty {
      * @param {float} c - Długość trzeciego boku.
      */
     public static void jakiTrojkat(float a, float b, float c) {
+        boolean prostokat = a * a + b * b == c * c || c * c + b * b == a * a || a * a + c * c == b * b;
+        boolean rowneramie = a == b || a == c || b == c;
         if (a == b && b == c && a == c) {
             System.out.println("Trójkąt równoboczny");
-        } else if (a * a + b * b == c * c || c * c + b * b == a * a || a * a + c * c == b * b) {
+        } else if (prostokat && rowneramie) {
+            System.out.println("Trojkat prostokatny i rownoramienny");
+        } else if (prostokat) {
             System.out.println("Trojkat prostokatny");
-        } else if (a == b || a == c || b == c) {
+        } else if (rowneramie) {
             System.out.println("Trojkat rownoramienny");
         } else if (a + b < c || a + c < b || b + c < a) {
             System.out.println("Trojkat nie istnieje");
