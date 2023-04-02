@@ -2,7 +2,7 @@
 Prototyp - nie zaleca się używać na produkcji.
 
 ## Kompilowanie
-`javac Trojkaty.java`
+`javac trojkaty.java`
 
 ## Uruchamianie
-`java Trojkaty 1 2 3`
+`java trojkaty 1 2 3`
