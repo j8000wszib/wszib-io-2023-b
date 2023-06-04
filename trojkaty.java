@@ -1,5 +1,22 @@
 class Trojkaty {
     /**
+     * Funkcja zwraca ile par odcinków trójkąta ma jednakową długość.
+     * @param {float} a - Długość pierwszego boku.
+     * @param {float} b - Długość drugiego boku.
+     * @param {float} c - Długość trzeciego boku.
+     */
+    public static int ileJednakowych(float a, float b, float c){
+        int jednakowe = 0; // tutaj zliczamy ile jest jednakowych bokow
+        if (a == b) {
+            jednakowe++;
+        }
+        if (b == c) {
+            jednakowe++;
+        }
+        return jednakowe;
+    }
+
+    /**
      * Główna funkcja programu.
      * @param {float} a - Długość pierwszego boku.
      * @param {float} b - Długość drugiegio boku.
