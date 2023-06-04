@@ -1,6 +1,4 @@
-/**
- * To jest program do rozpoznawania trójkąta.
- */
+// To jest program do rozpoznawania trójkąta.
 
 class Trojkaty {
     /**
@@ -25,18 +23,16 @@ class Trojkaty {
         }
     }
 
-    /**
-     * Wyświetla ekran pomocy
-     */
+    // Wyświetla ekran pomocy
+     
     public static void pomoc() {
         System.out.println("Acme INC. (C) 2022");
         System.out.println("Program do rozpoznawania rodzaju trójkąta");
         System.out.println("Uruchom z trzema argumentami liczbowymi - długość boków trójkąta");
     }
 
-    /**
-     * Glowna funkcja
-     */
+    // Glowna funkcja
+     
     public static void main(String... args) {
         if (args.length != 3) {
             pomoc();
